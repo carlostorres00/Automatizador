@@ -62,15 +62,6 @@ tests/                 unit/ (código puro) e integration/ (flujo completo sobre
 
 En construcción por fases. Ver historial de commits para seguir la evolución.
 
-- [x] Arquitectura definida y mapeo de apartados confirmado
-- [ ] Schema del Expediente Estructurado
-- [ ] Caso de prueba sintético
-- [ ] Ingesta mínima (MVP)
-- [ ] Agente técnico (MVP)
-- [ ] Consultor simplificado (MVP)
-- [ ] Redactor 1.1.1 (MVP)
-- [ ] Integración mínima a .docx (MVP)
-
 ## Notas
 
 - Nunca se inventan cifras, normativa o contenido de documentos fuente. Si falta información,
