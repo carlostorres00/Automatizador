@@ -1,0 +1,111 @@
+# Configuración de proveedor/modelo por agente.
+# El código de cada agente nunca debe saber qué proveedor hay detrás — solo llama a
+# llm_client.call(agente="tecnico", ...) y esta configuración decide el resto.
+#
+# Niveles orientativos (a ajustar con datos reales de coste/calidad, no ahora):
+#   barato        -> tareas de patrón, volumen alto, extracción con schema fijo
+#   intermedio     -> análisis estándar, redacción técnica
+#   intermedio_alto -> consultor, revisores, I+D+i
+#   alto           -> redactor 1.3 (justificación I+D+i) — máximo riesgo fiscal
+#
+# Placeholder: aún sin proveedor de pago configurado. Rellenar cuando se active la Fase LLM.
+
+agentes:
+  clasificador_documentos:
+    nivel: barato
+    proveedor: null
+    modelo: null
+
+  descripcion_evidencias_visuales:
+    nivel: barato_intermedio
+    proveedor: null
+    modelo: null
+
+  ocr_manuscrito_fallback:
+    nivel: barato_intermedio
+    proveedor: null
+    modelo: null
+
+  analista_tecnico:
+    nivel: intermedio
+    proveedor: null
+    modelo: null
+
+  analista_evidencias:
+    nivel: intermedio
+    proveedor: null
+    modelo: null
+
+  analista_economico_extraccion:
+    nivel: barato
+    proveedor: null
+    modelo: null
+
+  analista_idi:
+    nivel: intermedio_alto
+    proveedor: null
+    modelo: null
+
+  consultor:
+    nivel: alto
+    proveedor: null
+    modelo: null
+
+  redactor_1_1_1:
+    nivel: intermedio
+    proveedor: null
+    modelo: null
+
+  redactor_1_1_2:
+    nivel: intermedio
+    proveedor: null
+    modelo: null
+
+  redactor_1_2:
+    nivel: intermedio
+    proveedor: null
+    modelo: null
+
+  redactor_1_3:
+    nivel: alto
+    proveedor: null
+    modelo: null
+
+  redactor_1_4:
+    nivel: intermedio
+    proveedor: null
+    modelo: null
+
+  revisor_coherencia:
+    nivel: intermedio_alto
+    proveedor: null
+    modelo: null
+
+  revisor_tecnico:
+    nivel: intermedio_alto
+    proveedor: null
+    modelo: null
+
+  revisor_idi:
+    nivel: intermedio_alto
+    proveedor: null
+    modelo: null
+
+  revisor_evidencias:
+    nivel: intermedio_alto
+    proveedor: null
+    modelo: null
+
+  revisor_economico:
+    nivel: intermedio_alto
+    proveedor: null
+    modelo: null
+
+  integrador_transiciones:
+    nivel: barato
+    proveedor: null
+    modelo: null
+
+modo_prueba:
+  usar_cache: true
+  directorio_cache: "llm_cache/"
