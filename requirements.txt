@@ -1,11 +1,12 @@
 # Dependencias del MVP — se irán añadiendo por fases, no de golpe.
+# Dependencias del MVP — se irán añadiendo por fases, no de golpe.
+
 # Fase "schema + expediente":
 pydantic>=2.0
 
-# Fase "ingesta" (se añadirá cuando toque):
-# pypdf
-# python-docx
-# openpyxl
+# Fase "ingesta":
+pypdf
+openpyxl
 # pytesseract
 
 # Fase "LLM" (se añadirá cuando toque):
