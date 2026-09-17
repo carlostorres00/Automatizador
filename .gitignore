@@ -1,31 +1,19 @@
-# Python
-__pycache__/
-*.py[cod]
-*.egg-info/
+# Entornos virtuales
 .venv/
 venv/
-.env
+env/
 
-# Secrets / claves de API — NUNCA subir esto
-.env.local
-*.key
-secrets.yaml
-
-# Caché de respuestas LLM (puede contener datos de expedientes reales)
-llm_cache/*.json
-!llm_cache/.gitkeep
-
-# Casos de prueba con datos reales de cliente (los sintéticos sí se versionan)
-casos_prueba/reales/
-
-# Documentación de clientes — nunca debe entrar en el repo
-*.docx
-*.pdf
-!casos_prueba/**/*.pdf
-!casos_prueba/**/*.docx
-
-# Sistema
-.DS_Store
-.vscode/
+# IDE
 .idea/
-*.log
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# Caché del proyecto
+llm_cache/
+
